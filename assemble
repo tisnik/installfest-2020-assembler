@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+if [ -n "$1" ]
+then
+    as "$1" -o object_code.o
+    ld -s object_code.o
+else
+    echo "Please provide name of assembly source file to assemble"
+fi

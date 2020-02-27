@@ -2,3 +2,53 @@
 Materials for assembly language workshop
 
 ![link](link.png "Link to repository")
+
+```
+   _____                              ___.   .__                
+  /  _  \   ______ ______ ____   _____\_ |__ |  |   ___________ 
+ /  /_\  \ /  ___//  ___// __ \ /     \| __ \|  | _/ __ \_  __ \
+/    |    \\___ \ \___ \\  ___/|  Y Y  \ \_\ \  |_\  ___/|  | \/
+\____|__  /____  >____  >\___  >__|_|  /___  /____/\___  >__|   
+        \/     \/     \/     \/      \/    \/          \/       
+```
+
+# Úvod
+
+## Proč assembler?
+
+1. Větší efektivita využití CPU (čím novější generace, tím více relevantní)
+2. Rychlejší (a predikovatelné) přerušovací rutiny
+3. Efektivita při práci s pamětí (cache+RAM)
+4. Kompaktní kód
+5. Lepší pochopení práce s gdb a dalšími debuggery
+
+## Role assembleru
+Několik úrovní abstrakce (vrstev nad HW)
+- 5   uživatelské aplikace
+- 4½  (skriptovací engine)
+- 4   vyšší programovací jazyk
+- 3   assembler
+- 2   strojový kód
+- 1   syscalls
+- 0   HW
+
+## Assemblery v minulosti
+1. První generace mainframů
+    - vývojové diagramy v roli „vyššího jazyka“
+    - assembler
+    - strojový kód (zpočátku ruční překlad!)
+1. Mainframy a později minipočítače
+    - přechod k vyšším programovacím jazykům
+    - levnější vývoj, šance na přenositelnost
+1. Osmibitové herní konzole
+    - assembler jediná rozumná volba
+1. Domácí mikropočítače
+    - návrat „ke kořenům“
+    - prakticky jediná volba pro profesionální aplikace
+1. Osobní mikropočítače
+    - Motorola 68000
+    - 8086/80286...
+    - specifické použití assembleru (hry, dema, ...)
+1. DSP
+    - výpočetní subrutiny (FFT...)
+    - přerušovací rutiny

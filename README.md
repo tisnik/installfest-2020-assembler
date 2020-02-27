@@ -52,3 +52,23 @@ Několik úrovní abstrakce (vrstev nad HW)
 1. DSP
     - výpočetní subrutiny (FFT...)
     - přerušovací rutiny
+
+## Assemblery v současnosti
+1. Firmware
+1. Kód pracující přímo s HW (senzory, CPU+FPGA)
+1. DSP a MCU - rychlé přerušovací rutiny!
+1. Instrukce nedostupné ve vyšším programovacím jazyce
+1. Specifické subrutiny (SIMD, SSE, rotace, hledání vzorků...)
+1. Zpracování signálů
+1. Kodeky
+1. Virtuální stroje generující strojový kód
+1. Reverse engineering :-)
+1. Samomodifikující se kód
+1. DSP
+1. Fingerprints (A86)
+
+## Použití assembleru v současnosti
+1. Většinou velmi SPECIFICKÉ pro určitou oblast
+1. Naprostá většina aplikací není psána pouze v assembleru
+   - Coreboot: většinou C, jen zhruba 1% asm
+   - Důvod: výhody vyšších programovacích jazyků + snadnější audit kódu

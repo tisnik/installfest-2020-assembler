@@ -72,3 +72,30 @@ Několik úrovní abstrakce (vrstev nad HW)
 1. Naprostá většina aplikací není psána pouze v assembleru
    - Coreboot: většinou C, jen zhruba 1% asm
    - Důvod: výhody vyšších programovacích jazyků + snadnější audit kódu
+
+# Assembler a Linux
+* as    (GNU Assembler, GAS)
+* NASM  (Netwide Assembler)
+* Yasm
+* FASM  (flat assembler)
+
+## GNU Assembler
+* Součást klasického toolchainu
+* cpp → gcc → as → ln → spustitelný_soubor
+* Původně jen AT&T syntaxe
+* Dnes i „Intel“ syntaxe (na x86/x86-64)
+* Různý způsob zápisu podle platformy!
+   - Jména registrů
+   - Konstanty
+   - Adresování
+   - Komentáře
+
+## Syscally a GNU Assembler
+
+### Ukončení procesu funkcí "exit"
+* i386, syntaxe AT&T
+* i386, syntaxe Intel
+* ARM (32bit)
+* AArch64
+
+### „Hello world“ v assembleru

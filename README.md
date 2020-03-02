@@ -81,7 +81,7 @@ Několik úrovní abstrakce (vrstev nad HW)
 
 ## GNU Assembler
 * Součást klasického toolchainu
-* cpp → gcc → as → ln → spustitelný_soubor
+* cpp → gcc → as → ld → spustitelný_soubor
 * Původně jen AT&T syntaxe
 * Dnes i „Intel“ syntaxe (na x86/x86-64)
 * Různý způsob zápisu podle platformy!
